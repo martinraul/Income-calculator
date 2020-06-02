@@ -1,0 +1,22 @@
+{
+  "name": "1-incomecalculator",
+  "version": "1.0.0",
+  "description": "Income Calculator for argentinaprograma",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinraul/income-calculator.git"
+  },
+  "author": "Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinraul/income-calculator/issues"
+  },
+  "homepage": "https://github.com/martinraul/income-calculator#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}

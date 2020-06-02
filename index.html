@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        body {
+            background-color: rgb(255, 199, 44);
+        }
+
+        h1,
+        #disclaimer {
+            color: white;
+            background-color: rgb(2, 134, 85);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>INCOME CALCULATOR</title>
+</head>
+
+<body>
+    <div class=".container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1> 🖩SALARY CALCULATOR</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="form">
+            <form>
+                <input type="number" placeholder="Your Income (per year)" id="annualSalary" />
+                <button id="calculate">Calculate</button>
+                <input type="reset" value="Reset" class="hidden" id="reset-button">
+                <br><br>
+                <p>Your Monthly Income &rarr;<input type="text" disabled id="monthlySalary" /></p>
+                <p>Your Weekly Income &rarr;<input type="text" disabled id="weeklySalary" /></p>
+                <p>Your Daily Income &rarr;<input type="text" disabled id="dailySalary"></p>
+            </form>
+        </div>
+        <div class="row justify-content-center" id="disclaimer">
+            <p>This calculator assumes 52 working weeks and 365 weekdays per year in its
+                calculations.</p>
+        </div>
+</body>
+<script src="main.js"></script>
+</html>
