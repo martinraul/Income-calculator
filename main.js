@@ -2,7 +2,6 @@
 const $calculateButton = document.querySelector("#calculate");
 
 $calculateButton.onclick = function () {
-
 	validateAnnualSalary()
 	calculateSalary()
 	showResetButton()
@@ -11,7 +10,7 @@ $calculateButton.onclick = function () {
 
 function validateAnnualSalary() {
 	if (annualSalary.value === "") {
-		alert("Annual Salary Required");
+		alertEmpyField()
 	}
 	return
 }
@@ -31,8 +30,20 @@ function calculateSalary() {
 
 }
 
+function alertEmpyField(){
+	var alert = document.createElement("div");
+	alert.id="alert"
+	alert.className="alert alert-danger"
+	alert.textContent= "Annual Salary Required"
+	document.getElementById("alert").appendChild(alert); 
+}
+
 function showResetButton() {
 	document.querySelector("#reset-button").className = ""
 }
+
+function hideAlertEmptyField(){
+	document.getElementById("alert").className="hidden"
+} 
 
 

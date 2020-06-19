@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -41,11 +40,8 @@
             .hidden {
                 display: none;
             }
-
         </style>
-
         <title>🖩 INCOME CALCULATOR</title>
-
     </head>
 
     <body>
@@ -57,14 +53,15 @@
             </div>
             <div class="col" align="center" id="form">
                 <form>
-                    <input type="number" placeholder="Your Income (per year)" id="annualSalary"/>
+                    <input type="number" placeholder="Your Income (per year)" id="annualSalary" onfocus="hideAlertEmptyField()"/>
                     <button id="calculate">Calculate</button>
-                    <input type="reset" value="Reset" class="hidden" id="reset-button">
+                    <input type="reset" value="Reset" class="hidden" id="reset-button" >
                     <br><br>
                     <p>Your Monthly Income &rarr;<input type="text" disabled id="monthlySalary"/></p>
                     <p>Your Weekly Income &rarr;<input type="text" disabled id="weeklySalary"/></p>
                     <p>Your Daily Income &rarr;<input type="text" disabled id="dailySalary"></p>
                 </form>
+                <div id="alert"></div>
             <div class="row justify-content-center" id="disclaimer">
                 <p>This calculator assumes 52 working weeks and 365 weekdays per year in its
                 calculations.</p>
